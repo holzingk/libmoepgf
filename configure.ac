@@ -1,6 +1,10 @@
 AC_INIT([Moep Galois Field Library], [1.2], [moepi@moepi.net], [libmoepgf], [http://moep80211.net])
 #AC_PREREQ([2.69])
 
+# Dependencies
+PKG_PROG_PKG_CONFIG
+PKG_INSTALLDIR
+
 AC_PROG_CC
 AC_PROG_LN_S
 
@@ -74,6 +78,6 @@ AC_SEARCH_LIBS([pthread_join], [pthread])
 
 LT_INIT
 
-AC_CONFIG_FILES([Makefile])
+AC_CONFIG_FILES([Makefile lib/pkgconfig/libmoepgf.pc])
 
 AC_OUTPUT

@@ -120,5 +120,6 @@ moepgfbench_SOURCES += benchmark/coding_buffer.h
 
 moepgfbench_LDADD = libmoepgf.la
 
+pkgconfig_DATA = lib/pkgconfig/libmoepgf.pc
 
 TESTS = moepgfbench

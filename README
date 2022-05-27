@@ -1,4 +1,3 @@
-
 moepgf finite field arithmetic library
 ======================================
 
@@ -19,7 +18,7 @@ To install moepgf you can use the following commands:
 	make
 	make install
 
-Make sure to have installed autoconf, automake, libtool etc.
+Make sure to have installed autoconf, automake, libtool, pkg-config etc.
 
 See ./configure --help for details on the available parameters. For example you
 can use --prefix=DIR to specify the installation prefix.
@@ -30,7 +29,7 @@ To check the results before installation you can issue:
 
 If you use a git checkout you must run the following commands first:
 
-	apt-get install automake autoconf autoconf-archive autotools-dev libtool
+	apt-get install automake autoconf autoconf-archive autotools-dev libtool pkg-config
 	autoreconf -fi
 
 
