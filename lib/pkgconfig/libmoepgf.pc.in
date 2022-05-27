@@ -5,8 +5,7 @@ includedir=@includedir@
 
 Name: libmoepgf
 Description: moepgf finite field arithmetic library
-URL: https://github.com/moepinet/libmoepgf
 Version: @VERSION@
-Requires: 
-Libs: 
-Cflags: 
+Libs: -L${libdir} -lmoepgf
+Cflags: -I${includedir}
+
